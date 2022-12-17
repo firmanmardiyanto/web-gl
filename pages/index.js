@@ -16,7 +16,10 @@ function Home({ banner, products }) {
           </div>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:w-3/5">
             {products.map((product) => (
-              <Product key={product.id} {...product} />
+              <Product
+                key={product.id}
+                {...product}
+              />
             ))}
           </div>
           <div className="flex justify-center my-9 xl:w-1/5 items-center xl:mt-32">
